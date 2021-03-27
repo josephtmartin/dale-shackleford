@@ -25,17 +25,40 @@ export default function NavBar() {
   };
 
   return (
-      <Paper className={classes.root}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor='primary'
-          textColor='primary'
-          centered
-        >
-          <Tab label='Bio' component={Link} to='/'/>
-          <Tab label='Portfolio' component={Link} to='/portfolio'/>
-        </Tabs>
-      </Paper>
+    <Paper className={classes.root}>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        indicatorColor='primary'
+        textColor='primary'
+        centered
+      >
+        <Tab
+          label='Home'
+          component={Link}
+          to='/'
+        />
+        <Tab
+          label='Bio'
+          component={Link}
+          to='/bio'
+        />
+        <Tab
+          label='Production & Engineering'
+          component={Link}
+          to='/production-engineering'
+        />
+        <Tab
+          label='My Music'
+          component={Link}
+          to='/my-music'
+        />
+        <Tab
+          label='Contact'
+          component={Link}
+          to='/contact'
+        />
+      </Tabs>
+    </Paper>
   );
 }
