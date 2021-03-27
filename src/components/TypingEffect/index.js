@@ -5,7 +5,7 @@ const ReactTypingEffectDemo = () => (
     <>
       <ReactTypingEffect
         text={['Hello, My Name Is Dale Shackleford', 'I am a musician and audio production engineer']}
-        typingDelay= '1500'
+        typingDelay= '4000'
         speed= '100'
         eraseDelay= '1000'
         eraseSpeed= '50'
