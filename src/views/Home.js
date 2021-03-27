@@ -1,10 +1,11 @@
-import background from '../images/BLJ_4352b.jpg';
+// import background from '../images/BLJ_4352b.jpg';
+import TypingEffect from '../components/TypingEffect';
 
 export default function Home() {
   return (
-    <div style={{ backgroundImage: `url(${background})`, height: '1200px', width: '2400px' }}>
-      <h2>Home</h2>
-      <p>This is the Home Page</p>
+    <div>
+      <h2 style={{ paddingTop: '100px', paddingBottom: '400px', color: '#fafafa' }}>Home</h2>
+      <TypingEffect/>
     </div>
   );
 }
