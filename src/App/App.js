@@ -3,13 +3,15 @@ import './App.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import Navbar from '../components/Navbar';
+import Routes from '../helpers/Routes';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className='App'>
         <Router>
-          <Navbar/>
+          <Navbar />
+          <Routes />
         </Router>
       </div>
     );
