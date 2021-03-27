@@ -1,10 +1,9 @@
-import background from '../images/BLJ_4352b.jpg';
+// import background from '../images/BLJ_4352b.jpg';
 
 export default function Bio() {
   return (
     <div>
-      <h2>Bio</h2>
-      <p>This is the Bio Page</p>
+      <h2 style={{ paddingTop: '100px', color: '#fafafa' }}>Bio</h2>
     </div>
   );
 }

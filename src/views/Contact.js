@@ -1,10 +1,9 @@
-import background from '../images/BLJ9763.JPG';
+// import background from '../images/BLJ9763.JPG';
 
 export default function Contact() {
   return (
     <div className='contact-page'>
-      <h2>Contact</h2>
-      <p>Tester chester babyyyyyyyyyyyyyyy</p>
+      <h2 style={{ paddingTop: '100px', color: '#fafafa' }}>Contact</h2>
     </div>
   );
 }
