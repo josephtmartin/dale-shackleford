@@ -1,14 +1,18 @@
-.video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
+.my-music-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
+.song-title {
+  color: white;
+  font-family: 'Special Elite';
+}
+
+.song-desc {
+  padding-left: 25%;
+  padding-right: 25%;
   width: 100%;
-  position: absolute;
+  color: white;
+  font-size: 20px;
 }

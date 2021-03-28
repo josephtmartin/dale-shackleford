@@ -9,7 +9,7 @@ const ReactTypingEffectDemo = () => (
         speed= '100'
         eraseDelay= '1000'
         eraseSpeed= '50'
-        cursorRenderer={(cursor) => <h1>{cursor}</h1>}
+        cursorRenderer={(cursor) => <h1 style={{ color: 'white' }}>{cursor}</h1>}
         displayTextRenderer={(text, i) => (
             <h1>
               {text.split('').map((char) => {
