@@ -3,6 +3,7 @@
 export default function Bio() {
   return (
     <div className='bio-container'>
+      <h1 className='bio-title' style={{ paddingBottom: '200px', color: '#fafafa' }}>Bio</h1>
       <p className='bio-para'>
         I am a young audio engineer and producer originally from Oklahoma, but am currently based in
         the Nashville, TN area. I am finishing my Bachelor's degree in Audio Production and

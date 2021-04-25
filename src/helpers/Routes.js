@@ -7,6 +7,7 @@ import Home from '../views/Home';
 import MyMusic from '../views/MyMusic';
 import NotFound from '../views/NotFound';
 import Produced from '../views/Produced';
+import Research from '../views/Research';
 
 export default function Routes() {
   return (
@@ -35,6 +36,11 @@ export default function Routes() {
         exact
         path='/contact'
         component={Contact}
+      />
+      <Route
+        exact
+        path='/research'
+        component={Research}
       />
       <Route component={NotFound} />
     </Switch>
