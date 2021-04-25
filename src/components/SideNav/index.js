@@ -70,14 +70,14 @@ function SideNav(props) {
             <ListItem className='nav-link' component={Link} to='/bio'>
               <ListItemText className='nav-text' primary='Bio'/>
             </ListItem>
-            <ListItem className='nav-link' component={Link} to='/research'>
-              <ListItemText className='nav-text' primary='Research'/>
-            </ListItem>
             <ListItem className='nav-link' component={Link} to='/production-engineering'>
               <ListItemText className='nav-text' primary='Production & Engineering'/>
             </ListItem>
             <ListItem className='nav-link' component={Link} to='/my-music'>
               <ListItemText className='nav-text' primary='My Music'/>
+            </ListItem>
+            <ListItem className='nav-link' component={Link} to='/research'>
+              <ListItemText className='nav-text' primary='Research'/>
             </ListItem>
             <ListItem className='nav-link' component={Link} to='/contact'>
               <ListItemText className='nav-text' primary='Contact'/>
