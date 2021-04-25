@@ -6,7 +6,8 @@ export default function Contact() {
       <h1 style={{ paddingBottom: '200px', color: '#fafafa' }}>Contact</h1>
       <h2 className='facebook-link'><a href="https://www.facebook.com/DaleShackOfficial" target="_blank" rel="noreferrer">Facebook</a></h2>
       <h2 className='instagram-link'><a href="https://www.instagram.com/daleshackofficial/" target="_blank" rel="noreferrer">Instagram</a></h2>
-      <h2 className='email'>Email: daleshack28@gmail.com</h2>
+      <h2 className='email'>Email:</h2>
+      <h2 className='email'>daleshack28@gmail.com</h2>
     </div>
   );
 }
