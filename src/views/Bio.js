@@ -3,24 +3,27 @@
 export default function Bio() {
   return (
     <div className='bio-container'>
-      <h1 className='bio-title' style={{ paddingBottom: '200px', color: '#fafafa' }}>Bio</h1>
+      <h1 className='bio-title' style={{ paddingBottom: '200px', color: '#fafafa' }}>His Story</h1>
       <p className='bio-para'>
-        I am a young audio engineer and producer originally from Oklahoma, but am currently based in
-        the Nashville, TN area. I am finishing my Bachelor's degree in Audio Production and
-        beginning a Masters of Fine Arts in Recording Arts and Technology at Middle Tennessee State
-        University. I have a deep passion for pushing faders and making music, especially in studio
-        settings. I also work as a songwriter and artist and have been writing for 6-7 years. I believe
-        in hard work, dedication, and letting the song tell it's own story.
+      Growing up in Oklahoma, Dale was involved in music from a young age. From singing at church to traveling across Oklahoma with his family sharing stories and singing in Chickasaw, Shack loved all things music.
+      However, he never expected to create a career in the industry. At the age of 15 he wrote his first songs with his sister after she grew tired of singing the only song he knew how to play.
+      The first day they wrote two songs together and it sparked a passion for creating original content. He continued writing for the next few years and attended Eastern Oklahoma State College to study music.
+      At this point he also found a new related passion in music production. He then took a big leap and transferred to Middle Tennessee State University where he earned a Bachelor’s degree in Audio Production and
+      continued on for a Master’s of Fine Arts in Recording Arts and Technology. During this time, Dale had the opportunity to learn and grow as an audio engineer and music producer outside Music City working with other people’s songs,
+      helping them bring their dreams to life.
       </p>
 
       <b />
 
-      <p className='skills-para'>
-        I am proficient in Pro Tools and have experience on large format consoles and on smaller interfaces, including the
-        API Vision and the SSL Duality. I have tracked bands on both consoles, as well as mixed on the
-        Vision, various smaller SSL consoles, and in the box. My focus has been in tracking live
-        instruments and mixing to let the authenticity of the tracks shine for themselves.
-        My genre experience in recording includes Rock, Pop, Country, and Folk.
+      <p className="bio-para">
+      Now, DShack continues producing for artists and ensembles all while also releasing his own music. You can find his original music such as Burn Your Name or To the Top of Tiger Hill on all streaming platforms.
+      </p>
+
+      <b />
+
+      <p className="bio-para">
+      DShack is also a founding member of Successfully Unsigned, a music business podcast which helps rookie artists navigate their way around the music industry. On this podcast he is both a co-host and the technical director who films and
+      edits the majority of the content produced on the show.
       </p>
     </div>
   );
