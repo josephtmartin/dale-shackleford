@@ -82,6 +82,9 @@ function SideNav(props) {
             <ListItem className='nav-link' component={Link} to='/contact'>
               <ListItemText className='nav-text' primary='Contact'/>
             </ListItem>
+            <ListItem className='nav-link' component={Link} to='/socials'>
+              <ListItemText className='nav-text' primary='Socials'/>
+            </ListItem>
       </List>
     </div>
   );
