@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Navbar from '../components/Navbar';
-// import ResponsiveDrawer from '../components/DemoNavBar';
 import SideNav from '../components/SideNav';
 import Bio from '../views/Bio';
 import Contact from '../views/Contact';
