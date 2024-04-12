@@ -1,10 +1,12 @@
-// import background from '../images/PXL_20210319_222611694.PORTRAIT.jpg';
+import React from 'react';
+import Carousel from '../components/Carousel/Carousel';
 
 export default function Produced() {
   return (
-    <div>
-      <h1 style={{ paddingTop: '100px', color: '#fafafa' }}>Production & Engineering</h1>
-      <h1 style={{ paddingTop: '100px', color: '#fafafa' }}>Coming Soon!</h1>
+    <div className='produced-container'>
+      <div className='carousel-container'> {/* Add a container for the carousel */}
+        <Carousel />
+      </div>
     </div>
   );
 }

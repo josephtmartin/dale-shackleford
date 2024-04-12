@@ -1,0 +1,27 @@
+// .produced-container {
+//   // padding-top: 100px;
+//   // padding-left: 25%;
+//   // padding-right: 25%;
+// }
+
+// .skills-para {
+//   // margin-bottom: 40px;
+//   // width: 50%;
+//   // color: white;
+//   // font-size: 20px;
+// }
+
+.produced-container {
+  position: relative;
+}
+
+.carousel-container {
+  height: 500px; /* Set a fixed height for the carousel */
+}
+
+.skills-para {
+  margin-top: 20px; /* Add margin to create space below the carousel */
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
