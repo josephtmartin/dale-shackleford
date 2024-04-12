@@ -1,17 +1,39 @@
-// import background from '../images/BLJ9763.JPG';
+import React from 'react';
+import YoutubeLogo from '../images/youtube-logo.png';
+import SpotifyLogo from '../images/spotify-logo.png';
+import AppleMusicLogo from '../images/apple-music-logo.png';
+import PodcastLogo from '../images/podcast-logo.png';
+import LinktreeLogo from '../images/linktree-logo.png';
+import FacebookLogo from '../images/facebook-logo.png';
+import InstagramLogo from '../images/instagram-logo.png';
 
 export default function Socials() {
   return (
-      <div className='socials-page'>
-      <h1 style={{ paddingBottom: '200px', color: '#fafafa' }}>Socials</h1>
-      <h2 className='youtube-link'><a href="https://www.youtube.com/@dshackmusic?sub_confirmation=1" target="_blank" rel="noreferrer">Youtube</a></h2>
-      <h2 className='spotify-link'><a href="https://open.spotify.com/artist/2FnF7FPPkwlz3sRaeeydxT?si=PCpqUfESRaqIKECP7chQsQ" target="_blank" rel="noreferrer">Spotify</a></h2>
-      <h2 className='applemusic-link'><a href="https://music.apple.com/us/artist/dale-shack/1550885307" target="_blank" rel="noreferrer">Apple Music</a></h2>
-      <h2 className='podcast-link'><a href="https://www.youtube.com/@successfullyunsigned?sub_confirmation=1" target="_blank" rel="noreferrer">Successfully Unsigned Podcast</a></h2>
-      <h2 className='linktree-link'><a href="https://www.linktr.ee/daleshack" target="_blank" rel="noreferrer">Streaming</a></h2>
-      <h2 className='facebook-link'><a href="https://www.facebook.com/DaleShackOfficial" target="_blank" rel="noreferrer">Facebook</a></h2>
-      <h2 className='instagram-link'><a href="https://www.instagram.com/daleshackofficial/" target="_blank" rel="noreferrer">Instagram</a></h2>
-      <audio src="freejazz.wav" controls autoplay loop></audio>
+    <div className='socials-page'>
+      <h1 style={{ paddingBottom: '20px', color: '#fafafa' }}>Socials</h1>
+      <div className="social-logos-container">
+        <a href="https://www.youtube.com/@dshackmusic?sub_confirmation=1" target="_blank" rel="noreferrer">
+          <img src={YoutubeLogo} alt="YouTube" className="social-logo" />
+        </a>
+        <a href="https://open.spotify.com/artist/2FnF7FPPkwlz3sRaeeydxT?si=PCpqUfESRaqIKECP7chQsQ" target="_blank" rel="noreferrer">
+          <img src={SpotifyLogo} alt="Spotify" className="social-logo" />
+        </a>
+        <a href="https://music.apple.com/us/artist/dale-shack/1550885307" target="_blank" rel="noreferrer">
+          <img src={AppleMusicLogo} alt="Apple Music" className="social-logo" />
+        </a>
+        <a href="https://www.youtube.com/@successfullyunsigned?sub_confirmation=1" target="_blank" rel="noreferrer">
+          <img src={PodcastLogo} alt="Successfully Unsigned Podcast" className="social-logo" />
+        </a>
+        <a href="https://www.linktr.ee/daleshack" target="_blank" rel="noreferrer">
+          <img src={LinktreeLogo} alt="Linktree" className="social-logo" />
+        </a>
+        <a href="https://www.facebook.com/DaleShackOfficial" target="_blank" rel="noreferrer">
+          <img src={FacebookLogo} alt="Facebook" className="social-logo" />
+        </a>
+        <a href="https://www.instagram.com/daleshackofficial/" target="_blank" rel="noreferrer">
+          <img src={InstagramLogo} alt="Instagram" className="social-logo" />
+        </a>
       </div>
+    </div>
   );
 }
