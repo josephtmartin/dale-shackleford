@@ -13,7 +13,6 @@ const MyCarousel = () => {
 
   return (
     <div>
-      <h1 className='produced-title' style={{ paddingBottom: '200px', color: '#fafafa' }}>Production & Engineering</h1>
       <div style={{ position: 'relative', width: '100%', height: 500 }}>
         <Button onClick={handleSelect}>Open carousel</Button>
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}> {/* Set interval prop to null to disable auto rotation */}
