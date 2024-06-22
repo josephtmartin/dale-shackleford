@@ -42,7 +42,8 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    // backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: '#45464A',
   },
   content: {
     flexGrow: 1,
@@ -67,23 +68,17 @@ function SideNav(props) {
             <ListItem className='nav-link' component={Link} to='/'>
               <ListItemText className='nav-text' primary='Home'/>
             </ListItem>
-            <ListItem className='nav-link' component={Link} to='/bio'>
-              <ListItemText className='nav-text' primary='Bio'/>
+            <ListItem className='nav-link' component={Link} to='/my-music'>
+              <ListItemText className='nav-text' primary='Music'/>
             </ListItem>
             <ListItem className='nav-link' component={Link} to='/production-engineering'>
-              <ListItemText className='nav-text' primary='Production & Engineering'/>
-            </ListItem>
-            <ListItem className='nav-link' component={Link} to='/my-music'>
-              <ListItemText className='nav-text' primary='My Music'/>
+              <ListItemText className='nav-text' primary='Audio Engineering'/>
             </ListItem>
             <ListItem className='nav-link' component={Link} to='/research'>
               <ListItemText className='nav-text' primary='Research'/>
             </ListItem>
-            <ListItem className='nav-link' component={Link} to='/contact'>
-              <ListItemText className='nav-text' primary='Contact'/>
-            </ListItem>
-            <ListItem className='nav-link' component={Link} to='/socials'>
-              <ListItemText className='nav-text' primary='Socials'/>
+            <ListItem className='nav-link' component={Link} to='/bio'>
+              <ListItemText className='nav-text' primary='About'/>
             </ListItem>
       </List>
     </div>
@@ -106,7 +101,7 @@ function SideNav(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Dale Shackleford
+            Dale Shack
           </Typography>
         </Toolbar>
       </AppBar>
