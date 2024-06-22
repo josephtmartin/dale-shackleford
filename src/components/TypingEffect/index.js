@@ -4,10 +4,10 @@ import ReactTypingEffect from 'react-typing-effect';
 const ReactTypingEffectDemo = () => (
   <>
     <ReactTypingEffect
-      text={['Hello, My Name Is Dale Shackleford', 'I am a producer, engineer, and musician.']}
-      typingDelay='4000'
-      speed='100'
-      eraseDelay='1000'
+      text={['Chokma, My Name Is Dale Shack', 'I am a producer, engineer, and musician.']}
+      typingDelay='1000'
+      speed='70'
+      eraseDelay='750'
       eraseSpeed='50'
       cursorRenderer={(cursor) => <h1 style={{ color: 'white' }}>{cursor}</h1>}
       displayTextRenderer={(text, i) => (

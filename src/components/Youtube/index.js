@@ -10,7 +10,7 @@ const YoutubeEmbed = ({ embedId }) => (
       frameBorder='0'
       allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
       allowFullScreen
-      title='Embedded youtube'
+      title={`Youtube ${embedId}`} // Set a unique title for each iframe
     />
   </div>
 );

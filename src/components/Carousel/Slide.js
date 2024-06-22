@@ -2,14 +2,14 @@ import React from 'react';
 
 const Slide = ({
   media,
-  mediaBackgroundStyle,
+  backgroundImage,
   style,
   title,
   subtitle,
 }) => (
     <div style={style}>
       <div style={{
-        ...mediaBackgroundStyle,
+        backgroundImage: `url(${backgroundImage})`,
         height: '100%',
         display: 'flex',
         alignItems: 'center',

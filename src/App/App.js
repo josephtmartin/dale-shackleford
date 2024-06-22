@@ -3,8 +3,6 @@ import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SideNav from '../components/SideNav';
 import Bio from '../views/Bio';
-import Contact from '../views/Contact';
-import Socials from '../views/Socials';
 import Home from '../views/Home';
 import MyMusic from '../views/MyMusic';
 import NotFound from '../views/NotFound';
@@ -36,16 +34,6 @@ function App() {
             exact
             path='/my-music'
             element={<MyMusic />}
-          />
-          <Route
-            exact
-            path='/contact'
-            element={<Contact />}
-          />
-          <Route
-            exact
-            path='/socials'
-            element={<Socials />}
           />
           <Route
             exact

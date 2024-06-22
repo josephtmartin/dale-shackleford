@@ -16,3 +16,51 @@
   color: white;
   font-size: 20px;
 }
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+
+.facebook-link {
+  text-decoration: none;
+  margin-bottom: 20px;
+  width: 50%;
+  color: white;
+}
+
+.instagram-link {
+width: 50%;
+color: white;
+margin-bottom: 20px;
+}
+
+.youtube-link, .spotify-link, .applemusic-link, .podcast-link, .linktree-link {
+width: 50%;
+color: white;
+margin-bottom: 20px;
+}
+
+.social-logos-container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social-logo {
+width: 100px; /* Adjust the size as needed */
+height: auto; /* Maintain aspect ratio */
+margin: 0 10px; /* Adjust spacing between logos */
+}
+
+.email-container {
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
