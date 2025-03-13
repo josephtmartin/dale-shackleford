@@ -30,7 +30,7 @@ export default function Bio() {
       <b />
 
       <p className="bio-para">
-      DShack is also a founding member of Successfully Unsigned, a music business podcast which helps rookie artists navigate their way around the music industry. On this podcast he is both a co-host and the technical director who films and
+      DShack is also a founding member of <a href="https://su-podcast.com" target="_blank" rel="noopener noreferrer">Successfully Unsigned</a>, a music business podcast which helps rookie artists navigate their way around the music industry. On this podcast he is both a co-host and the technical director who films and
       edits the majority of the content produced on the show.
       </p>
       <div className='email-container'>
@@ -46,7 +46,7 @@ export default function Bio() {
         <a href="https://music.apple.com/us/artist/dale-shack/1550885307" target="_blank" rel="noreferrer">
           <img src={AppleMusicLogo} alt="Apple Music" className="social-logo" />
         </a>
-        <a href="https://www.youtube.com/@successfullyunsigned?sub_confirmation=1" target="_blank" rel="noreferrer">
+        <a href="https://su-podcast.com/" target="_blank" rel="noreferrer">
           <img src={PodcastLogo} alt="Successfully Unsigned Podcast" className="social-logo" />
         </a>
         <a href="https://www.linktr.ee/daleshack" target="_blank" rel="noreferrer">
