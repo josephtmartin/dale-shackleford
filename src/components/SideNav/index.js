@@ -40,9 +40,6 @@ function SideNav(props) {
         <ListItem component={Link} to="/" className="nav-link">
           <ListItemText primary="Home" className="nav-text" />
         </ListItem>
-        <ListItem component={Link} to="/my-music" className="nav-link">
-          <ListItemText primary="Music" className="nav-text" />
-        </ListItem>
         <ListItem component={Link} to="/production-engineering" className="nav-link">
           <ListItemText primary="Portfolio" className="nav-text" />
         </ListItem>
