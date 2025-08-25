@@ -5,7 +5,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import SideNav from '../components/SideNav';
 import Bio from '../views/Bio';
 import Home from '../views/Home';
-import MyMusic from '../views/MyMusic';
 import NotFound from '../views/NotFound';
 import Produced from '../views/Produced';
 import Research from '../views/Research';
@@ -31,11 +30,6 @@ function App() {
             exact
             path='/production-engineering'
             element={<Produced />}
-          />
-          <Route
-            exact
-            path='/my-music'
-            element={<MyMusic />}
           />
           <Route
             exact
