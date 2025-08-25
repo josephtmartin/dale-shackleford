@@ -1,13 +1,80 @@
-import React from 'react';
-// import './AudioPlayer.css'; // CSS file for styling the audio player
+import React, { useState, useRef } from 'react';
 
-const AudioPlayer = ({ src }) => (
-  <div className="audio-player">
-    <audio controls>
-      <source src={src} type="audio/wav" />
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-);
+const AudioPlayer = ({ src, image }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const audioRef = useRef(null);
+
+  console.log('Image prop:', image); // Debugging log
+
+  const togglePlay = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  const handleTimeUpdate = () => {
+    if (audioRef.current) {
+      setCurrentTime(audioRef.current.currentTime);
+    }
+  };
+
+  const handleLoadedMetadata = () => {
+    if (audioRef.current) {
+      setDuration(audioRef.current.duration);
+    }
+  };
+
+  const handleProgressChange = (e) => {
+    if (audioRef.current) {
+      const newTime = (e.target.value / 100) * duration;
+      audioRef.current.currentTime = newTime;
+      setCurrentTime(newTime);
+    }
+  };
+
+  const formatTime = (time) => {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  };
+
+  return (
+    <div
+      className="audio-player-card"
+      style={{
+        backgroundImage: image ? `url(${image})` : 'none',
+        backgroundColor: image ? 'transparent' : '#333',
+      }}
+    >
+      <button className="play-button" onClick={togglePlay}>
+        {isPlaying ? 'Pause' : 'Play'}
+      </button>
+      <audio
+        ref={audioRef}
+        src={src}
+        onTimeUpdate={handleTimeUpdate}
+        onLoadedMetadata={handleLoadedMetadata}
+      />
+      <div className="progress-container">
+        <input
+          type="range"
+          className="progress-bar"
+          value={(currentTime / duration) * 100 || 0}
+          onChange={handleProgressChange}
+        />
+        <div className="time-display">
+          {formatTime(currentTime)} / {formatTime(duration)}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default AudioPlayer;

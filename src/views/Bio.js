@@ -1,5 +1,6 @@
 // import background from '../images/BLJ_4352b.jpg';
 import React from 'react';
+import MusicCarousel from '../components/Carousel/MusicCarousel';
 import YoutubeLogo from '../images/youtube-logo.png';
 import SpotifyLogo from '../images/spotify-logo.png';
 import AppleMusicLogo from '../images/apple-music-logo.png';
@@ -33,6 +34,9 @@ export default function Bio() {
       DShack is also a founding member of <a href="https://su-podcast.com" target="_blank" rel="noopener noreferrer">Successfully Unsigned</a>, a music business podcast which helps rookie artists navigate their way around the music industry. On this podcast he is both a co-host and the technical director who films and
       edits the majority of the content produced on the show.
       </p>
+      <div className='my-music-body'>
+        <MusicCarousel />
+      </div>
       <div className='email-container'>
         <h3 className='email'>Email: dshacksounds@gmail.com</h3>
       </div>

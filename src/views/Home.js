@@ -1,4 +1,4 @@
-import TypingEffect from '../components/TypingEffect';
+import Typewriter from '../components/Typewriter';
 import Card from '../components/Card';
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
     <div className='home-body'>
       <h1 className='home-title' style={{ paddingTop: '100px', paddingBottom: '100px', color: '#fafafa' }}>Home</h1>
       <div className='home-bio-container'>
-        <TypingEffect />
+        <Typewriter />
         <div className='card-container'>
           {cards.map((card, index) => (
             <Card key={index} title={card.title} heading={card.heading} />

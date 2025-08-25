@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CssBaseline from '@mui/material/CssBaseline';
 import SideNav from '../components/SideNav';
 import Bio from '../views/Bio';
 import Home from '../views/Home';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter>
+        <CssBaseline />
         <SideNav />
         <Routes>
           <Route
