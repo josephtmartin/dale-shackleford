@@ -1,5 +1,5 @@
 ## Dale Shackleford Personal Site
-This site was built for a friend to share their own songwriting and musical creations as well as some of the things they had a hand in producing and engineering.
+This site was built for a friend to share their own songwriting and musical creations as well as some of the things he had a hand in producing and engineering.
 
 ![Screenshot](https://i.postimg.cc/RZ5RNwq3/dale-shack.png)
 
