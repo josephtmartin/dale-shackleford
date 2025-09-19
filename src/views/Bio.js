@@ -37,7 +37,7 @@ export default function Bio() {
       <div className='my-music-body'>
         <MusicCarousel />
       </div>
-      <div className='email-container'>
+      {/* <div className='email-container'>
         <h3 className='email'>Email: dshacksounds@gmail.com</h3>
       </div>
       <div className="social-logos-container">
@@ -62,7 +62,7 @@ export default function Bio() {
         <a href="https://www.instagram.com/daleshackofficial/" target="_blank" rel="noreferrer">
           <img src={InstagramLogo} alt="Instagram" className="social-logo" />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

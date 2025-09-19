@@ -1,12 +1,23 @@
 import React from 'react';
+import '../../styles/components/_card.scss';
 
-const Card = ({ title, heading }) => (
-  <div className='card'>
-      <div className='card-body'>
-        <h5 className='card-title'>{title}</h5>
-        <p className='card-text'>{heading}</p>
+export default function Card({ title, heading, image }) {
+  return (
+    <div className="card">
+      <div className="card-inner">
+        <div className="card-front" style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <h2>{title}</h2>
+          <p>{heading}</p>
+        </div>
+        <div className="card-back">
+          <a
+            href="mailto:dshacksounds@gmail.com?subject=Booking Inquiry&body=Hi, I would like to book your services."
+            className="book-now-button"
+          >
+            Book Now
+          </a>
+        </div>
       </div>
-  </div>
-);
-
-export default Card;
+    </div>
+  );
+}

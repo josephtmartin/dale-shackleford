@@ -2,9 +2,9 @@ import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
 const TypingEffectDemo = () => (
-  <h1 style={{ color: 'white', fontFamily: "'Special Elite', cursive" }}>
+  <h1 style={{ color: 'black', fontFamily: "'Special Elite', cursive" }}>
     <Typewriter
-      words={['Chokma, My Name Is Dale Shack', 'I am a producer, engineer, and musician.']}
+      words={['Producer, Engineer, Songwriter, Artist', 'Chokma, My Name Is Dale Shack']}
       loop={false} // Set to true if you want it to loop
       cursor
       cursorStyle="|"

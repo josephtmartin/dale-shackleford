@@ -6,30 +6,37 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh; /* Ensures the container spans the full height of the viewport */
+}
+
+.produced-content {
+  flex: 1; /* Pushes the footer to the bottom when content is short */
+  padding: 20px;
 }
 
 .carousel-container {
   height: 500px; /* Set a fixed height for the carousel */
+  margin-top: 20px;
 }
 
-.skills-para {
-  margin-top: 20px; /* Add margin to create space below the carousel */
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  color: white;
-  font-size: 20px;
-}
+// .skills-para {
+//   margin-top: 20px; /* Add margin to create space below the carousel */
+//   margin-bottom: 40px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 50%;
+//   color: white;
+//   font-size: 20px;
+// }
 
-.carousel-inner-studio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+// .carousel-inner-studio {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
 
-.carousel-inner-youtube {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+// .carousel-inner-youtube {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }

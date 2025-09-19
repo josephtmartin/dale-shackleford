@@ -3,20 +3,19 @@ import Card from '../components/Card';
 
 export default function Home() {
   const cards = [
-    { title: 'Studio', heading: 'Popular music production, studio engineering and recording, mixing' },
-    { title: 'Live', heading: 'Musical Theatre mixing, FoH mixing, Concert Promotion/Production, Monitor mixing' },
-    { title: 'Location', heading: 'Remote/location recording of both popular music and ensembles/orchestral' },
-    { title: 'Video Production', heading: 'Video editing, camera operation, podcast production and editing' },
+    { title: 'Studio Recording', heading: 'Take your song from Demo to radio ready', image: '' },
+    { title: 'Mixing', heading: 'Turn raw tracks into polished, release-ready records', image: '' },
+    { title: 'Live Concerts', heading: 'Bring your show to larger than life', image: '' },
+    { title: 'Location Recording', heading: 'Capture your performance anywhere with studio quality', image: '' },
   ];
 
   return (
     <div className='home-body'>
-      <h1 className='home-title' style={{ paddingTop: '100px', paddingBottom: '100px', color: '#fafafa' }}>Home</h1>
       <div className='home-bio-container'>
         <Typewriter />
         <div className='card-container'>
           {cards.map((card, index) => (
-            <Card key={index} title={card.title} heading={card.heading} />
+            <Card key={index} title={card.title} heading={card.heading} image={card.image}/>
           ))}
         </div>
         <p className='home-bio'>Dale Shack is a Chickasaw Audio Engineer, Producer, and Artist based in Nashville. He earned a B.Sc. in Audio Production and an M.F.A. in Recording Arts and Technology from
@@ -24,6 +23,15 @@ export default function Home() {
           Alongside his technical work, he also releases his own music and performs as an artist. Dale is a passionate supporter of local artists and co-founded Successfully Unsigned, a music business podcast.
         </p>
       </div>
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/D1-HEEi-9Qk?si=2fjk3R_ShS0_QrLK" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
     </div>
   );
 }
