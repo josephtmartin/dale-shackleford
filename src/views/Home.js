@@ -3,10 +3,10 @@ import Card from '../components/Card';
 
 export default function Home() {
   const cards = [
-    { title: 'Studio Recording', heading: 'Take your song from Demo to radio ready', image: '' },
-    { title: 'Mixing', heading: 'Turn raw tracks into polished, release-ready records', image: '' },
-    { title: 'Live Concerts', heading: 'Bring your show to larger than life', image: '' },
-    { title: 'Location Recording', heading: 'Capture your performance anywhere with studio quality', image: '' },
+    { title: 'Studio Recording', heading: 'Take your song from Demo to radio ready', image: '/images/55-077A6406.jpg' },
+    { title: 'Mixing', heading: 'Turn raw tracks into polished, release-ready records', image: '/images/IMG_7495.jpg' },
+    { title: 'Live Concerts', heading: 'Bring your show to larger than life', image: '/images/IMG_8134.jpg' },
+    { title: 'Location Recording', heading: 'Capture your performance anywhere with studio quality', image: '/images/IMG_7217.jpg' },
   ];
 
   return (
