@@ -1,0 +1,26 @@
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.email-container {
+  margin-bottom: 10px;
+}
+
+.email {
+  color: white;
+  font-size: 16px;
+}
+
+.social-logos-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-logo {
+  width: 30px;
+  height: 30px;
+}

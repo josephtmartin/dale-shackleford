@@ -7,13 +7,15 @@ import Home from '../views/Home';
 import NotFound from '../views/NotFound';
 import Produced from '../views/Produced';
 import Research from '../views/Research';
+import EmailForm from '../components/EmailForm';
+import Footer from '../components/Footer';
 import './App.scss';
 
 const routeBackgrounds = {
-  '/': '/images/BLJ_4352b.jpg',
-  '/bio': '/images/BLJ9763.jpg',
-  '/production-engineering': '/images/audiodeck.jpg',
-  '/research': '/images/BLJ9471.jpg'
+  '/': '/images/BLJ9226.jpg',
+  '/bio': '/images/IMG_9059.jpg',
+  '/production-engineering': '/images/IMG_7528.jpg',
+  '/research': '/images/BLJ2379.jpg'
 };
 
 function AppContent() {
@@ -34,15 +36,19 @@ function AppContent() {
         minHeight: '100vh',
       }}
     >
-      <CssBaseline />
-      <SideNav />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/bio" element={<Bio />} />
-        <Route exact path="/production-engineering" element={<Produced />} />
-        <Route exact path="/research" element={<Research />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div className="content">
+        <CssBaseline />
+        <SideNav />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/bio" element={<Bio />} />
+          <Route exact path="/production-engineering" element={<Produced />} />
+          <Route exact path="/research" element={<Research />} />
+          <Route exact path="/email-form" element={<EmailForm />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
 }

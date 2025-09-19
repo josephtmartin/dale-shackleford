@@ -1,11 +1,17 @@
 .App {
   text-align: center;
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* Pushes the footer to the bottom when content is short */
 }
 
 .App-logo {
