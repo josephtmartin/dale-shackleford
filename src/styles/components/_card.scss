@@ -3,14 +3,19 @@
   height: 200px;
   perspective: 1000px; /* Enables 3D perspective */
   margin: 20px;
+  background: transparent; /* prevents white flash behind faces */
+  border-radius: 10px;
+  max-width: 100%;
 }
 
 .card-inner {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
+  background: transparent; /* prevents white flash during rotation */
 }
 
 .card:hover .card-inner {
@@ -25,12 +30,15 @@
   top: 0;
   left: 0;
   backface-visibility: hidden; /* Hides the back side when not flipped */
-  border-radius: 10px;
   overflow: hidden;
+  border-radius: 10px;
+  background-clip: padding-box;
 }
 
 .card-front {
-  background-color: black; // fallback if no image
+  background-color: black !important; /* both sides fully black */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari fix */
   background-size: cover;
   background-position: center;
   position: relative; /* for overlay */
@@ -72,7 +80,7 @@
 }
 
 .card-back {
-  background-color: white;
+  background-color: black;
   transform: rotateY(180deg); /* flip back side */
   display: flex;
   justify-content: center;
@@ -83,7 +91,7 @@
 
 .book-now-button {
   display: inline-block;
-  background-color: black;
+  background-color: rgb(19, 18, 18);
   color: white;
   text-decoration: none;
   padding: 10px 20px;

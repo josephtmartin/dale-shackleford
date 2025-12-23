@@ -18,11 +18,13 @@ export default function Home() {
             <Card key={index} title={card.title} heading={card.heading} image={card.image}/>
           ))}
         </div>
-        <p className='home-bio'>Dale Shack is a Chickasaw Audio Engineer, Producer, and Artist based in Nashville. He earned a B.Sc. in Audio Production and an M.F.A. in Recording Arts and Technology from
+        <p className='home-bio'>
+          Dale Shack is a Chickasaw Audio Engineer, Producer, and Artist based in Nashville. He earned a B.Sc. in Audio Production and an M.F.A. in Recording Arts and Technology from
           Middle Tennessee State University. Over the past five years, Dale has honed his craft working under Grammy and Platinum-winning producers, handling studio sessions, remote recordings, and live concerts.
           Alongside his technical work, he also releases his own music and performs as an artist. Dale is a passionate supporter of local artists and co-founded Successfully Unsigned, a music business podcast.
         </p>
       </div>
+
       <iframe 
         width="560" 
         height="315" 
