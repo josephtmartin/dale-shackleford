@@ -34,6 +34,7 @@ function AppContent() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         minHeight: '100vh',
+        backgroundColor: '#000' // fallback if image fails
       }}
     >
       <div className="content">

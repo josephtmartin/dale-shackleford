@@ -1,55 +1,78 @@
+/* Overall page spacing */
 .research-page {
   padding-top: 100px;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.thesis-title-undergrad {
+/* Two-column layout container */
+.research-columns {
+  max-width: 1400px;     /* gives more breathing room */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 300px;            /* your desired spacing */
+}
+
+/* Column widths */
+.grad-section,
+.undergrad-section {
+  width: 55%;            /* wide text boxes that still fit with a 300px gap */
+}
+
+/* Text elements */
+.thesis-title-undergrad,
+.thesis-title-quote-undergrad,
+.abstract-title-undergrad,
+.summary-para-undergrad,
+.thesis-title-grad,
+.thesis-title-quote-grad,
+.abstract-title-grad,
+.summary-para-grad {
+  width: 100%;
+  color: white;
   margin-bottom: 20px;
-  width: 50%;
-  color: white;
 }
 
-.thesis-title-quote-undergrad {
-  margin-bottom: 20px;
-  width: 50%;
-  color: white;
-}
-
-.abstract-title-undergrad {
-  margin-bottom: 40px;
-  width: 50%;
-  color: white;
-}
-
-.summary-para-undergrad {
-  margin-bottom: 40px;
-  width: 50%;
-  color: white;
-  font-size: 20px;
-}
-
-.thesis-title-grad {
-  margin-bottom: 20px;
-  width: 50%;
-  color: white;
-}
-
-.thesis-title-quote-grad {
-  margin-bottom: 20px;
-  width: 50%;
-  color: white;
-}
-
+/* Larger spacing for abstracts */
+.abstract-title-undergrad,
 .abstract-title-grad {
   margin-bottom: 40px;
-  width: 50%;
-  color: white;
 }
 
+.summary-para-undergrad,
 .summary-para-grad {
   margin-bottom: 40px;
-  width: 50%;
-  color: white;
   font-size: 20px;
+}
+
+.section-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.section-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ---------- MOBILE BREAKPOINT ---------- */
+@media (max-width: 900px) {
+  .research-columns {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .grad-section,
+  .undergrad-section {
+    width: 100%;
+  }
 }

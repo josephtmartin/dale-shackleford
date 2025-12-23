@@ -1,42 +1,55 @@
 .produced-container {
-  // position: relative;
   padding-top: 100px;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  min-height: 100vh; /* Ensures the container spans the full height of the viewport */
 }
 
 .produced-content {
-  flex: 1; /* Pushes the footer to the bottom when content is short */
+  width: 100%;
+  max-width: 900px;
   padding: 20px;
+  margin: 0 auto;
+
+  background: rgba(0, 0, 0, 0.6); /* black with 60% opacity */
+  border-radius: 12px;            /* optional: soft rounded corners */
+  backdrop-filter: blur(4px);     /* optional: subtle glass effect */
+}
+
+.skills-para {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+
+  /* Force centering */
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .carousel-container {
-  height: 500px; /* Set a fixed height for the carousel */
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;          /* space between YouTube + Studio carousels */
 }
 
-// .skills-para {
-//   margin-top: 20px; /* Add margin to create space below the carousel */
-//   margin-bottom: 40px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   width: 50%;
-//   color: white;
-//   font-size: 20px;
-// }
+@media (max-width: 768px) {
+  .produced-content {
+    padding: 10px;
+    max-width: 95%;
+  }
 
-// .carousel-inner-studio {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
+  .skills-para {
+    font-size: 18px;
+  }
 
-// .carousel-inner-youtube {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
+  .carousel-container {
+    gap: 20px;
+  }
+}

@@ -13,8 +13,17 @@
 }
 
 .home-bio {
-  margin-bottom: 40px;
-  width: 50%;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+
   color: white;
   font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  padding: 30px;                 /* space inside the box */
+  border-radius: 12px;           /* smooth rounded corners */
+  backdrop-filter: blur(4px);    /* optional: subtle glass effect */
 }
