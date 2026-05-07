@@ -30,6 +30,17 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .bio-content {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .bio-para {
+    font-size: 18px;
+  }
+}
+
 .my-music-body {
   width: 100%;
   max-width: 900px;

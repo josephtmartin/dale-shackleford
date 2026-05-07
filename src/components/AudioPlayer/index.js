@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-const AudioPlayer = ({ src, image }) => {
+const AudioPlayer = ({ src, image, title }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -50,12 +50,12 @@ const AudioPlayer = ({ src, image }) => {
       className="audio-player-card"
       style={{
         backgroundImage: image ? `url(${image})` : 'none',
-        backgroundColor: image ? 'transparent' : '#333',
       }}
     >
       <button className="play-button" onClick={togglePlay}>
         {isPlaying ? 'Pause' : 'Play'}
       </button>
+      {title && <div className="song-title">{title}</div>}
       <audio
         ref={audioRef}
         src={src}

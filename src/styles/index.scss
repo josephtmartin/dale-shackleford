@@ -74,5 +74,36 @@ body {
   /* The file size of this background image is 93% smaller
   to improve page load speed on mobile internet connections */
   background-image: url("../../public/images/BLJ9226.jpg");
+  background-attachment: scroll;
+  }
+
+  .App {
+    background-attachment: scroll;
+  }
+
+  .typewriter {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .home-body,
+  .bio-container,
+  .research-page,
+  .produced-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-container {
+    justify-content: center;
+  }
+
+  .home-body iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 40px auto 0;
+    border: none;
   }
 }

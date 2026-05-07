@@ -35,13 +35,20 @@ const MyCarousel = () => {
               <AudioPlayer
                 src="/audio/Cause We Ended as Lovers_Website Mixdown.wav"
                 image="/images/Cause we ended as lovers.jpg"
+                title="Cause We Ended as Lovers"
               />
             }
           />
         </Carousel.Item>
         <Carousel.Item>
           <Slide
-            media={<AudioPlayer src="/audio/freejazz.wav" />}
+            media={
+              <AudioPlayer
+                src="/audio/freejazz.wav"
+                image="/images/Dante JAZZ.jpg"
+                title="Free Jazz"
+              />
+            }
           />
         </Carousel.Item>
       </Carousel>
