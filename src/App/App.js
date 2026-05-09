@@ -15,7 +15,14 @@ const routeBackgrounds = {
   '/': '/images/BLJ9226.jpg',
   '/bio': '/images/IMG_9059.jpg',
   '/production-engineering': '/images/IMG_7528.jpg',
-  '/research': '/images/BLJ2379.jpg'
+  '/research': '/images/BLJ9223Cropped.jpg'
+};
+
+const routeBackgroundPositions = {
+  '/': 'center',
+  '/bio': 'center',
+  '/production-engineering': 'center',
+  '/research': 'center top'
 };
 
 function AppContent() {
@@ -26,13 +33,15 @@ function AppContent() {
     return routeBackgrounds[location.pathname] || '/images/default-background.jpg';
   }, [location.pathname]);
 
+  const backgroundPosition = routeBackgroundPositions[location.pathname] || 'center';
+
   return (
     <div
       className="App"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition,
         minHeight: '100vh',
         backgroundColor: '#000' // fallback if image fails
       }}

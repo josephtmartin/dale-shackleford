@@ -20,6 +20,16 @@
   text-align: center;
 }
 
+.bio-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto 40px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
 .bio-para {
   width: 100%;
   max-width: 900px;
@@ -28,6 +38,17 @@
   font-size: 20px;
   line-height: 1.6;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .bio-content {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .bio-para {
+    font-size: 18px;
+  }
 }
 
 .my-music-body {

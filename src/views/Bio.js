@@ -6,14 +6,10 @@ export default function Bio() {
   return (
     <div className='bio-container'>
       <div className='bio-content'>
-        <h1 className='bio-title' style={{ paddingBottom: '200px', color: '#fafafa' }}>His Story</h1>
+        <h1 className='bio-title' style={{ color: '#fafafa' }}>His Story</h1>
+        <img className='bio-image' src={`images/Artboard5.png`} alt="Dale Shack" />
         <p className='bio-para'>
-        Growing up in Oklahoma, Dale was involved in music from a young age. From singing at church to traveling across Oklahoma with his family sharing stories and singing in Chickasaw, Shack loved all things music.
-        However, he never expected to create a career in the industry. At the age of 15 he wrote his first songs with his sister after she grew tired of singing the only song he knew how to play.
-        The first day they wrote two songs together and it sparked a passion for creating original content. He continued writing for the next few years and attended Eastern Oklahoma State College to study music.
-        At this point he also found a new related passion in music production. He then took a big leap and transferred to Middle Tennessee State University where he earned a Bachelor’s degree in Audio Production and
-        continued on for a Master’s of Fine Arts in Recording Arts and Technology. During this time, Dale had the opportunity to learn and grow as an audio engineer and music producer outside Music City working with other people’s songs,
-        helping them bring their dreams to life.
+        Holding a Master of Fine Arts in Recording Arts and Technology from MTSU, Dale has worked with multiple Grammy-winning and platinum-selling producers and engineers. His expertise spans traditional large-format consoles, hybrid workflows, and Audio-over-IP protocols like Dante. His Dante experience has enabled him to engineer location recordings, conduct multi-studio sessions, and produce live-stream events. Dale also has a strong background in live sound, having mixed concerts for groups like The 12 South Band and musical theatre productions. Additionally, he contributes to artist education by creating music videos and music industry podcast content for Successfully Unsigned. Below you will find examples of projects he has worked on along with some of the works he is credited on.
         </p>
 
         <b />
@@ -25,7 +21,7 @@ export default function Bio() {
         <b />
 
         <p className="bio-para">
-        DShack is also a founding member of <a href="https://su-podcast.com" target="_blank" rel="noopener noreferrer">Successfully Unsigned</a>, a music business podcast which helps rookie artists navigate their way around the music industry. On this podcast he is both a co-host and the technical director who films and
+        DShack is also a founding member of <a href="https://www.youtube.com/@successfullyunsigned" target="_blank" rel="noopener noreferrer">Successfully Unsigned</a>, a music business podcast which helps rookie artists navigate their way around the music industry. On this podcast he is both a co-host and the technical director who films and
         edits the majority of the content produced on the show.
         </p>
         <div className='my-music-body'>

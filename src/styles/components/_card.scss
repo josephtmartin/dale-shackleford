@@ -1,11 +1,14 @@
 .card {
-  width: 300px;
+  width: min(300px, 100%);
+  min-width: 240px;
   height: 200px;
   perspective: 1000px; /* Enables 3D perspective */
   margin: 20px;
-  background: transparent; /* prevents white flash behind faces */
+  background: transparent;
   border-radius: 10px;
   max-width: 100%;
+  overflow: hidden;
+  flex: 1 1 280px;
 }
 
 .card-inner {
@@ -36,7 +39,7 @@
 }
 
 .card-front {
-  background-color: black !important; /* both sides fully black */
+  background-color: transparent !important; /* preserve transparency */
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden; /* Safari fix */
   background-size: cover;
@@ -80,12 +83,14 @@
 }
 
 .card-back {
-  background-color: black;
+  background-color: transparent;
   transform: rotateY(180deg); /* flip back side */
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   z-index: 2; /* ensures back sits above front when flipped */
 }
 

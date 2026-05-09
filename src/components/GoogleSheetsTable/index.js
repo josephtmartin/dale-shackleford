@@ -5,7 +5,7 @@ const GoogleSheetsTable = () => {
   const [data, setData] = useState([]);
   const spreadsheetId = '1rT9XLv_WCKyJzNcKAMpYOZVmGrch8JGabdFjYpR-Juk';
   const apiKey = 'AIzaSyDC8vW9HI01H04B3nvavLfsdOSGZk90_2A';
-  const range = 'Sheet1!A1:E1000'; // Adjust the range according to your needs
+  const range = 'Sheet1!A1:F1000'; // Adjust the range according to your needs
 
   useEffect(() => {
     const fetchData = async () => {

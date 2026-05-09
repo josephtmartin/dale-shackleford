@@ -9,7 +9,7 @@ const TypingEffectDemo = () => (
       cursor
       cursorStyle="|"
       typeSpeed={70}
-      deleteSpeed={50}
+      deleteSpeed={40}
       delaySpeed={1000}
     />
   </h1>

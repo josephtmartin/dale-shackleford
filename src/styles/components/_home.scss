@@ -10,19 +10,20 @@
 
 .home-bio-container {
   padding-top: 100px;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
   max-width: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-.home-bio {
+.home-para {
   width: 100%;
   max-width: 900px;
   margin: 0 auto 40px;
 
   color: white;
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.6;
   text-align: center;
 
@@ -30,4 +31,14 @@
   padding: 30px;                 /* space inside the box */
   border-radius: 12px;           /* smooth rounded corners */
   backdrop-filter: blur(4px);    /* optional: subtle glass effect */
+}
+
+.home-body iframe {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 40px auto 0;
+  border: none;
 }

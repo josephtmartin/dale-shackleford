@@ -16,32 +16,22 @@ const MyCarousel = () => {
       <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
         <Carousel.Item>
           <Slide
-            media={<SpotifyEmbed embedId='2QI6cPRRTZqQFDkBz5n36l' />}
+            media={<SpotifyEmbed embedId='7vlpjaBWF5Rb7dr52OahOL' />}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <Slide
+            media={<SpotifyEmbed embedId='6q9gOJgu0IedRViT8TRipo' />}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <Slide
+            media={<SpotifyEmbed embedId='6Tn8K14McZ4oiG7oQTLfUJ' />}
           />
         </Carousel.Item>
         <Carousel.Item>
           <Slide
             media={<SpotifyEmbed embedId='3wwiIZaOnf2u6Y4Dmt8asA' />}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Slide
-            media={<SpotifyEmbed embedId='75NEvsjFzz7s2ktsvN8sYg' />}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Slide
-            media={
-              <AudioPlayer
-                src="/audio/Cause We Ended as Lovers_Website Mixdown.wav"
-                image="/images/Cause we ended as lovers.jpg"
-              />
-            }
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Slide
-            media={<AudioPlayer src="/audio/freejazz.wav" />}
           />
         </Carousel.Item>
       </Carousel>
