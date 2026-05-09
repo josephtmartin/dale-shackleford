@@ -10,7 +10,7 @@ import InstagramLogo from '../../images/instagram-logo.png';
 const Footer = () => (
   <footer className="footer">
     <div className="email-container">
-      <h3 className="email">Email: dshacksounds@gmail.com</h3>
+      <h3 className="email">To Work With Dale, Email: dshacksounds@gmail.com</h3>
     </div>
     <div className="social-logos-container">
       <a href="https://www.youtube.com/@dshackmusic?sub_confirmation=1" target="_blank" rel="noreferrer">
@@ -22,7 +22,7 @@ const Footer = () => (
       <a href="https://music.apple.com/us/artist/dale-shack/1550885307" target="_blank" rel="noreferrer">
         <img src={AppleMusicLogo} alt="Apple Music" className="social-logo" />
       </a>
-      <a href="https://su-podcast.com/" target="_blank" rel="noreferrer">
+      <a href="https://www.youtube.com/@successfullyunsigned" target="_blank" rel="noreferrer">
         <img src={PodcastLogo} alt="Successfully Unsigned Podcast" className="social-logo" />
       </a>
       <a href="https://www.linktr.ee/daleshack" target="_blank" rel="noreferrer">

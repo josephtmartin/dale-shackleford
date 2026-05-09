@@ -69,7 +69,13 @@ function SideNav(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Typography 
+            variant="h6" 
+            noWrap
+            sx={{
+              fontFamily: 'DM Serif Display, serif',
+            }}
+          >
             Dale Shack
           </Typography>
         </Toolbar>

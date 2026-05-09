@@ -6,19 +6,20 @@ export default function Research() {
 
   return (
     <div className='research-page'>
+      <div className='research-content'>
+        <h1 className='research-title' style={{ paddingBottom: '60px', color: '#2e2e2eff' }}>
+          Research
+        </h1>
 
-      <h1 className='research-title' style={{ paddingBottom: '100px', color: '#fafafa' }}>
-        Research
-      </h1>
-
-      {/* NEW FLEX CONTAINER */}
-      <div className="research-columns">
+        <div className="research-columns">
 
         {/* LEFT COLUMN — Graduate */}
         <div className="grad-section">
-          <h2 className='thesis-title-grad'>Graduate Thesis: Dante Networking and System Design at MTSU</h2>
-          <h2 className='thesis-title-quote-grad' style={{ paddingBottom: '100px' }}>
-            "Master of Fine Arts in Recording Arts and Technology Final Research Project for Middle Tennessee State University: Dante Networking and System Design at MTSU"
+          <h2 className='thesis-title-grad'>Graduate Thesis: </h2>
+          <h2 className='thesis-subtitle-grad'>Dante Networking and System Design at MTSU</h2>
+          <h2 className='thesis-title-quote-grad'>Master of Fine Arts and Technology</h2>
+          <h2 className='thesis-title-quote-grad' style={{ paddingBottom: '50px' }}>
+            Middle Tennessee State University
           </h2>
 
           <h2 className='abstract-title-grad'>Abstract</h2>
@@ -44,9 +45,12 @@ export default function Research() {
 
         {/* RIGHT COLUMN — Undergraduate */}
         <div className="undergrad-section">
-          <h2 className='thesis-title-undergrad'>Middle Tennessee State University Undergraduate Honors Thesis:</h2>
-          <h2 className='thesis-title-quote-undergrad' style={{ paddingBottom: '100px' }}>
-            "Undergraduate Honors Thesis for Middle Tennessee State University: Muskogean Tribal Influence on the Genre of Delta Blues"
+          <h2 className='thesis-title-undergrad'>Undergraduate Honors Thesis:</h2>
+          <h2 className='thesis-subtitle-undergrad'>
+            Muskogean Tribal Influence on the Genre of Delta Blues
+          </h2>
+          <h2 className='thesis-title-quote-undergrad' style={{ paddingBottom: '50px' }}>
+            Middle Tennessee State University Honors College
           </h2>
 
           <h2 className='abstract-title-undergrad'>Abstract</h2>
@@ -70,6 +74,7 @@ export default function Research() {
           )}
         </div>
 
+        </div>
       </div>
     </div>
   );
